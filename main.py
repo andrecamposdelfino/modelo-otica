@@ -3,6 +3,7 @@ import database
 from modelo import Cliente, Funcionario, Fornecedor, Produto, Pedido, ItensPedido
 
 conn = database.conexao
+conn.execute("PRAGMA foreign_keys=ON")
 cursor = database.cursor
 
 cliente = Cliente(None, "98952137321", "Janne Mary", "Av Euclides Paulino", "jannemary.ac@gmail.com")
